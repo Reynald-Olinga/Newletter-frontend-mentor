@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+
+}
+
+/* FIRST PAGE  */
+
+
+.first-body {
+
+    background: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.central-div {
+
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 50rem;
+    height: auto;
+    border-radius: 1rem;
+    align-items: center;
+    position: relative;
+    top:4rem ;
+    padding: .8rem;
+
+
+}
+
+ .form-div {
+    position: relative;
+    width: 24rem;
+    height: auto;
+
+} 
+
+
+.img-div {
+    position: relative;
+    width:23rem;
+    /* border:solid black 1px; */
+}
+
+img {
+    width:100% ; 
+    height: auto;
+    
+} 
+
+
+h3 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: .3em;
+    text-align: center;
+}
+
+p {  
+    padding: .6em;
+}
+
+.list {
+    line-height: 2.2em;
+    
+}
+
+ul {
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+label {
+    margin: 2em;
+    font-weight: 700;
+}
+
+input {
+    display: block;
+    width: 19rem;
+    height:2.5rem;
+    margin:1.5rem;
+    margin-bottom:2rem ;
+    border-radius: .4em;
+}
+
+.button {
+    background: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.list {
+    list-style-image: url(image-newsletter/icon-list.svg);
+    margin-bottom: 1rem;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #ff2801, hsl(4, 100%, 67%),#f98000) ;
+    cursor:context-menu ;
+}
+
+
+#email {
+    padding:.3em .3em .3em 1.8em;
+}
+
+.dismiss-link {
+    text-decoration: none;
+}
+
+
+/* MOBILE-LAYOUT */
+
+
+ @media (max-width:375px) {
+    .central-div {
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        align-items: center;
+        max-width: fit-content;
+        border-radius: 0;
+
+    }
+
+    .img-div {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+ }
+
+
+
+
+/* SECOND PAGE  */
+
+.second-body {
+    
+    background:hsl(235, 18%, 26%);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.central-div-2 {
+
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 24rem;
+    height: auto;
+    border-radius: 1rem;
+    position: relative;
+    top:7.5rem ;
+    padding: .8rem;
+    
+
+
+}
+
+.second-img-div {
+    position: relative;
+    width: 3rem;
+    height: auto;
+}
+
+.title-second-page {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: .3em;
+    text-align: left;
+
+}
+
+.dismiss {
+    background: hsl(235, 18%, 26%);
+    color: white;
+    font-weight: 700;
+    box-shadow: none;
+    position: relative;
+    margin :2rem auto;
+}
+
+
+.dismiss:hover {
+    background: linear-gradient(to right, #ff2801, hsl(4, 100%, 67%),#f98000) ;
+    cursor:context-menu ;
+}
+
+.except-email {
+    font-weight: 700;
+}
+
+
+/* MOBILE SECOND PAGE LAYOUT  */
+
+@media (max-width:375px) {
+
+
+    .central-div-2 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        margin-top: 0;
+        border-radius: 0;
+        bottom: 0;
+        justify-content: center;
+        
+    }
+
+    .dismiss {
+        position: absolute;
+        bottom: 3rem;
+        align-self: center;
+        
+    }
+}
